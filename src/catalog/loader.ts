@@ -7,8 +7,8 @@ import type { CatalogEntry } from "./types.js";
  * Walks up from this module's directory to find the package root (the
  * nearest ancestor with a package.json), rather than hardcoding a relative
  * path — that stays correct whether this runs from `src/` (dev, via tsx),
- * `dist/src/` (built), or `node_modules/jev-cms/dist/src/` (installed as a
- * dependency), all of which put `catalog/` at a different relative depth.
+ * `dist/src/` (built), or `node_modules/@em.vrn/jev-cms/dist/src/` (installed
+ * as a dependency), all of which put `catalog/` at a different relative depth.
  */
 function findPackageRoot(startDir: string): string {
   let dir = startDir;

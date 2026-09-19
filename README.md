@@ -5,7 +5,7 @@ built around CMS-style content. Install it, pick a question by id from the bundl
 and resolve it against your own content — however you want to use the answer.
 
 ```ts
-import { createJevCatalog } from "jev-cms";
+import { createJevCatalog } from "@em.vrn/jev-cms";
 
 const jev = createJevCatalog({ apiKey: "your-typesafe-api-key" });
 
@@ -21,7 +21,7 @@ No server to run, no webhook, no CMS-specific config — just an API key and a q
 ## Install
 
 ```bash
-npm install jev-cms
+npm install @em.vrn/jev-cms
 ```
 
 ## API
