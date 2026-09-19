@@ -87,16 +87,18 @@ calls, so it can be filtered/searched without importing code.
 | `portfolio-project-page.json` | 29 | Portfolio/case project pages |
 
 The catalog started at 515 questions built to genuinely non-redundant, atomic-judgment-call
-standards (per the `jev` skill's guidance — one job per question, no deterministic facts, no
-near-duplicates within or across domains) and was later deepened to 1000 under the same bar,
-rather than padded to hit a round number. Deeper domains (blog-article, ecommerce-product,
-support-ticket, knowledge-base-article) reflect where the market research showed the heaviest
-real-world content volume; every domain now has enough depth (29+) to be useful on its own.
+standards (per the [`jev` skill](https://github.com/EmilianoVeron/jev-skill)'s guidance — one job
+per question, no deterministic facts, no near-duplicates within or across domains) and was later
+deepened to 1000 under the same bar, rather than padded to hit a round number. Deeper domains
+(blog-article, ecommerce-product, support-ticket, knowledge-base-article) reflect where the
+market research showed the heaviest real-world content volume; every domain now has enough
+depth (29+) to be useful on its own.
 
 ## Explicitly excluded
 
-Deterministic, code-checkable facts never became questions here, per the `jev` skill's core
-rule ("if a regex or a lookup solves it, don't spend a question on it"): word/character
+Deterministic, code-checkable facts never became questions here, per the
+[`jev` skill](https://github.com/EmilianoVeron/jev-skill)'s core rule ("if a regex or a lookup
+solves it, don't spend a question on it"): word/character
 counts, whether a meta description or alt text is present, whether a link is broken, exact
 date comparisons, and similar. Those belong in your adapter or `decide()` logic, not in a Jev
 call.

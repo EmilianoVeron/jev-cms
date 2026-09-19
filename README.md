@@ -77,7 +77,8 @@ grep -l "readyToPublish" catalog/*.json
 
 Every question is a genuine judgment call Jev can meaningfully answer — never a deterministic
 fact (word count, meta tags, broken links) that your own code should check instead. See the
-`jev` skill's guidance if you're evaluating whether a question you want to add belongs here.
+[`jev` skill](https://github.com/EmilianoVeron/jev-skill)'s guidance if you're evaluating whether
+a question you want to add belongs here.
 
 ## Testing
 
