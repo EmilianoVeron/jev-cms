@@ -1,0 +1,52 @@
+{
+  "name": "jev-cms",
+  "version": "0.1.0",
+  "description": "On-demand Jev (TypeSafe System One) question catalog for CMS-style content — classify, gate, and judge your own content by id, in your own app.",
+  "license": "MIT",
+  "author": "Emiliano Veron",
+  "homepage": "https://github.com/EmilianoVeron/jev-cms#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmilianoVeron/jev-cms.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EmilianoVeron/jev-cms/issues"
+  },
+  "keywords": [
+    "jev",
+    "typesafe",
+    "cms",
+    "content-moderation",
+    "classification",
+    "llm"
+  ],
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "catalog"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run",
+    "prepublishOnly": "npm test && npm run build"
+  },
+  "dependencies": {
+    "@typesafe-ai/sdk": "^0.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "typescript": "^5.5.3",
+    "vitest": "^2.0.5"
+  }
+}
